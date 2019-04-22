@@ -15,6 +15,8 @@
     const nextSong = album.songs[nextSongIndex];
 //     player.playPause(nextSong);
        helper.playPauseAndUpdate(nextSong);
+       
+$('#time-control .total-time').text( nextSong.duration );
 
   });
    
@@ -36,6 +38,8 @@ $('#volume-control input').on('input', function (event) {
     const previousSong = album.songs[previousSongIndex];
 //     player.playPause(nextSong);
        helper.playPauseAndUpdate(previousSong);
+       
+$('#time-control .total-time').text( previousSong.duration );
 
   });
   
